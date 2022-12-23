@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="./css/style-padrao.css">
+    <title>Carrinho</title>
+</head>
+<body>
+  <header class="cabecalho">
+    <nav class="menu">
+      <ul class="ul-menu">
+        <li><a href="./login.html"><i class="bi bi-file-person"></i></a></li>
+        <li id='imagem-localizacao'>
+          <i class="bi bi-geo-alt"></i>
+          <p class="nome-localizacao">Londrina, PR</p>
+        </li>
+        <li><a href="#"><i class="bi bi-card-image"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main class="main__container">
+      <section class="car__box">
+        <i class="bi bi-crevron-double-left"></i>
+        <p>CARRINHO</p>
+        <i class="bi bi-cart-x"></i>
+      </section>
+
+      <section class="car__box--second">
+            <img class="car__img" src="https://img.freepik.com/vetores-gratis/composicao-de-cesta-de-sacola-de-compras-com-imagem-isolada-de-produtos-no-carrinho-de-carrinho-de-supermercado_1284-54441.jpg?w=2000" alt="foto de comida"/>
+        <div class="car__box--display">
+            <p>NOME DO PRODUTO</p>
+            <div class="car__box--control">
+                <i class="bi bi-dash-square"></i>
+                <p>1</p>
+                <i class="bi bi-plus-square"></i>
+            </div>
+        </div>
+
+        <div class="car__box--trash">
+            <i class="bi bi-trash"></i>
+            <p>R$ 0000,00</p>
+        </div>
+      </section>
+
+      <section>
+        <input class="car__input" type="text" placeholder="Digite seu cupom aqui">
+        <button class="user__btn">APLICAR</button>
+      </section>
+
+      <section>
+        <!-- <div>
+            <p>TOTAL</p>
+            <p>DELIVERY</p>
+        </div> -->
+        
+        <button class="user__btn">IR PARA PAGAMENTO</button>
+      </section>
+    </main>
+
+      <footer id="footer" class="footer">
+        <ul class="footer-card">
+          <a href="./index.html">
+            <li class="footer-item">
+               <i class="bi bi-house-fill footer-icons"></i>
+               <p class="footer-nome-item">HOME</p>
+            </li>
+          </a>
+
+          <a href="./cadastrar_usuario.html">
+            <li class="footer-item">
+                <i class="bi bi-emoji-smile footer-icons"></i>
+                <p class="footer-nome-item ">CADASTRO USUARIOS</p>
+            </li>
+          </a>
+          <a href="./cadastrar_produto.html">
+            <li class="footer-item">
+                <i class="bi bi-upc-scan footer-icons"></i>
+                <p class="footer-nome-item ">CADASTRO DE PRODUTOS</p>
+            </li>
+          </a>
+          <a href="./carrinho.html">
+            <li class="footer-item">
+                <i class="bi bi-cart footer-icons"></i>
+                <p class="footer-nome-item">CARRINHO</p>
+            </li>
+          </a>
+
+            <a href="./produto.html">
+              <li class="footer-item">
+              <i class="bi bi-stickies footer-icons"></i>
+              <p class="footer-nome-item">PRODUTOS</p>
+            </li></a>
+        </ul>
+      </footer>
+</body>
+</html>

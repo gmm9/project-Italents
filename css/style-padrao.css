@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    /* Unidade do vh (altura do viewport), valor minimo */
+    min-height: 100vh;
+}
+
+:root {
+    --background-clean: beige;
+    --cor-da-empresa: orange;
+}
+
+/* HEADER STYLE - NAV */
+
+.cabecalho {
+    width: 100%;
+    background-image: url('https://thumbs.dreamstime.com/b/esquina-de-comida-mexicana-borde-arriba-abajo-vista-sobre-un-oscuro-fondo-banner-con-espacio-copia-la-est%C3%A1-en-parte-hacia-tacos-191566359.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu .ul-menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.ul-menu li {
+    list-style: none;
+    padding: 2rem;
+    color: antiquewhite;
+}
+
+.bi-file-person {
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+#imagem-localizacao {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-left: 5rem;
+}
+
+.bi-geo-alt{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+
+.nome-localizacao {
+    font-size: 40px;
+    padding-left: 0;
+    padding-right: 5rem;
+}
+
+.bi-card-image{
+    font-size: 60px;
+    color: var(--background-clean);
+}
+/* Estilização da seção mensagens */
+#mensagens-inicio{
+    padding: 2rem;
+    background-color: var(--background-clean);
+    text-align: center;
+}
+#nome-empresa {
+    font-weight: 700;
+    font-size: 50px;
+    margin-bottom: .5rem;
+    color: var(--cor-da-empresa);
+}
+.mensagem {
+    color: gray;
+    font-size: 25px;
+}
+
+/* Estilização da seção INPUT */
+#input {
+    padding: 5px;
+    display: flex;
+    margin: auto;
+    align-items:center ;
+    justify-content: center;
+    gap: 3px;
+    position: relative;
+}
+
+.bi-search {
+    left: 37%;
+    position: absolute;
+    font-size: 25px;
+    color: var(--cor-da-empresa);
+}
+
+#input-text {
+    width: 30%;
+    font-size: 25px;
+    border-radius: 30px;
+    padding: 5px;
+    text-align: center;
+    border: 2px solid gray;
+    outline: none;
+}
+#input-text:hover {
+    border: 2px solid var(--cor-da-empresa);
+}
+#input-text::selection {
+    border: 2px solid var(--cor-da-empresa);
+}
+input[type=text] {
+    color: grey;
+}
+/* Estilização Categoria */
+
+#categorias {
+    display: flex;   
+    justify-content: center;
+}
+
+#categoria-ul {
+    display: flex;
+    justify-content: center;
+}
+.categoria-a {
+    margin: 3rem 5rem;
+    list-style: none;
+}
+
+li.categoria {
+    padding: 20px;
+    background: var(--cor-da-empresa);
+    border-radius: 30px;
+    font-weight: 700;
+}
+li.categoria:hover {
+    opacity: 0.5;
+}
+/* Estilização PRODUTOS */
+#cards-produtos {
+    display: flex;
+}
+.card-produto {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    box-shadow: 0 5px 15px black;
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+    border-radius: 16px;
+}
+
+.produto-img {
+    height: 60%;
+    width: 100%;
+}
+
+.nome-do-produto {
+    text-align: center;
+    padding: 10px;
+}
+/* VERMAIS ESTILO */
+#ver-mais {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 30px;
+    padding-right: 32px;
+    color: gray;
+}
+/* Estilo avaliação */
+#avaliacao {
+    text-align: center;
+    border: .5rem outset var(--cor-da-empresa);
+    border-radius: 16px;
+    padding: 1rem;
+    width: 50%;
+    margin: auto;
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--cor-da-empresa);
+    text-shadow: 2px 2px black;
+}
+
+
+
+/* Estilização do FOOTER */
+
+.footer {
+    background-color: var(--background-clean);
+    margin-top: 5rem;
+}
+
+.footer-card {
+    display: flex;
+    justify-content: space-around;
+    text-decoration: none;
+    text-align: center;
+}
+
+.footer-item {
+    margin: .5rem;
+    list-style: none;
+}
+
+.footer-icons {
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+.footer-nome-item {
+    font-weight: 700;
+    color: gray;
+    font-size: 20px;
+}
+
+/* ESTILIZAÇÃO PAGINA LOGIN */
+
+.login__container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.login__title {
+    font-size: 42;
+}
+.login__img {
+    width: 40%;
+    margin-top: -50px;
+    z-index: -1;
+}
+.login__box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.login__box--usuarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+}
+.login__box--label {
+    font-weight: 700;
+}
+
+.login__box--input {
+    border-radius: 16px;
+    padding: 10px;
+
+}
+.login__box--btn {
+    width: 150px;
+    height: 57px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor-da-empresa);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.login__box--btn:hover {
+    opacity: 0.8;
+}
+
+/* Estilização cadastrar_usuarios */
+
+.user__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.user__title {
+    padding-bottom: 20px;
+    font-weight: 700;
+}
+.user__form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 60%;
+    padding: 30px;
+    background-color: blanchedalmond;
+    align-items: center;
+}
+.user__form>label {
+    text-align: center;
+    font-weight: 700;
+    padding: 10px 0 5px 0;
+}
+.user__form>input {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
+    width: 50%;
+    outline: none;
+}
+
+.box-radio {
+    display: flex;
+    margin: 20px;
+    gap: 20px;
+}
+.box-radio > label {
+    font-weight: 700;
+}
+
+.user__btn {
+    width: 150px;
+    height: 57px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--cor-da-empresa);
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.user__btn:hover {
+    opacity: 0.8;
+}
+
+/* ESTILIZAÇÃO CADASTRO PRODUTOS */
+
+.prod__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px;
+}
+.prod__title {
+    padding-bottom: 20px;
+}
+
+.prod__form {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+    width: 60%;
+    padding: 30px;
+    background-color: blanchedalmond;
+    align-items: center;
+    gap: 20px;
+}
+
+.prod__form>label {
+    text-align: center;
+    font-weight: 700;
+}
+.prod__form>input {
+    border: 1px solid gray;
+    padding: 10px;
+    border-radius: 16px;
+    text-align: center;
+    width: 50%;
+    outline: none;
+}
+
+/* ESTILIZAÇÃO CARRINHO */
+
+.main__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.car__box {
+    padding-top: 30px;
+    display: flex;
+    gap: 10px;
+    font-size: 60px;
+    color: var(--cor-da-empresa);
+}
+.car__img{
+    width: 30%;
+    z-index: -1;
+    justify-self: center;
+}
+.car__box--second {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.car__box--display {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    font-size: 40px;
+    font-weight: 700;
+}
+.car__box--display > p {
+    text-align: center;
+    padding: 10px;
+}
+.car__box--control {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.car__box--trash {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 30px;
+    align-items: center;
+}
+.car__input {
+    padding: 10px;
+    border-radius: 16px;
+}
+
+/* ESTILIZAÇÃO PRODUTOS */
+
+.produtos__text {
+    padding-top: 20px;
+    width: 50%;
+    text-align: center;
+}
+
+.car__box--control {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.div__preco {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    text-align: end;
+    padding: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.div__btn-car {
+    display: flex;
+    font-size: 50px;
+    align-items: center; 
+    gap: 20px;
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+    header {
+        display: flex;
+    }
+    .bi-geo-alt, .nome-localizacao, .bi-card-image {
+        display: none;
+    }
+
+    ul.footer-card {
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: center;
+    }
+    .footer-card a {
+        width: 100%;
+    }
+
+    .bi-search{
+        left: 30%;
+    }
+    #categoria-ul {
+        flex-wrap: wrap;
+    }
+    #cards-produtos {
+        flex-wrap: wrap;
+    }
+    .card-produto {
+        width: 100%;
+        height: auto;
+    }
+    #ver-mais {
+        display: none;
+    }
+    #frase-avaliacao {
+        display: none;
+    }
+    .login__title {
+        display: none;
+    }
+
+}
